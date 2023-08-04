@@ -1,0 +1,133 @@
+	//Name: Vriti D
+		//Date: April 19, 2023
+		//Purpose: To write a program to create a simple calculator evaluating basic arithmetic operations
+	
+		
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+	
+		//Prompt for the two integer values and operation
+		//*********************************//
+		System.out.print("Enter the first integer value would like to use: ");
+		int valueOne = input.nextInt();
+		
+		System.out.print("Enter the second integer value would like to use: ");
+		int valueTwo = input.nextInt();
+		
+		System.out.print("Enter the name of the operation you would like to do today: ");
+		String operation = input.next();
+		
+		//***********************************************************************************************************//
+		
+			//Addition
+			//*************//
+		
+			if (operation.equalsIgnoreCase("addition")) {
+				int addition = valueOne+valueTwo;
+				System.out.print(valueOne+ "+" +valueTwo+ "="+addition);		
+			}
+		
+		//***********************************************************************************************************//
+		
+		
+				/*Prompt to keep going on
+				//***********************/
+				System.out.print("***********************************************************\n");
+				System.out.print("Would you like to keep calculating more? Please answer Yes or No. \n");
+				System.out.print("***********************************************************");
+				String continueCalculating = input.next();
+		
+				if (continueCalculating.equalsIgnoreCase("yes")) {
+			
+					//Subtraction
+					//*************//
+					if (operation.equalsIgnoreCase("subtraction")) {
+					int subtraction = valueOne-valueTwo;
+					System.out.print(valueOne+ "-" +valueTwo+ "="+subtraction);	
+					int subtraction1 = valueTwo-valueOne;
+					System.out.print(valueTwo+ "+" +valueOne+ "="+subtraction1);
+					}
+				}
+	
+				if (continueCalculating.equalsIgnoreCase("no")) {
+					System.out.print("Thank you for using this calculator:)");
+				}
+		
+		//***********************************************************************************************************//
+		
+		
+				//Prompt to keep going on
+				//***********************//
+				System.out.print("***********************************************************\n");
+				System.out.print("Would you like to keep calculating more? Please answer Yes or No. \n");
+				System.out.print("***********************************************************");
+				String continueCalculating2 = input.next();
+				
+				if (continueCalculating.equalsIgnoreCase("yes")) {
+					
+					//Multiplication
+					//*************//
+					if (operation.equalsIgnoreCase("multiplication")) {
+						int multiplication = valueOne*valueTwo;
+						System.out.print(valueOne+ "*" +valueTwo+ "="+multiplication);	
+					}
+				}
+			
+				if (continueCalculating.equalsIgnoreCase("no")) {
+					System.out.print("Thank you for using this calculator:)");
+				}
+		
+				//***********************************************************************************************************//
+				
+				//Prompt to keep going on
+				//***********************//
+				System.out.print("***********************************************************\n");
+				System.out.print("Would you like to keep calculating more? Please answer Yes or No. \n");
+				System.out.print("***********************************************************");
+				String continueCalculating3 = input.next();
+				
+				if (continueCalculating.equalsIgnoreCase("yes")) {
+					
+					//Division
+					//*************//
+					if (operation.equalsIgnoreCase("division")) {
+						int division = valueOne/valueTwo;
+						System.out.print(valueOne+ "/" +valueTwo+ "="+division);	
+						int division2 = valueTwo/valueOne;
+						System.out.print(valueTwo+ "/" +valueOne+ "="+division);
+					}
+				}
+			
+				if (continueCalculating.equalsIgnoreCase("no")) {
+					System.out.print("Thank you for using this calculator:)");
+				}
+		
+				//***********************************************************************************************************//
+				
+				
+				//Prompt to keep going on
+				//***********************//
+				System.out.print("***********************************************************\n");
+				System.out.print("Would you like to keep calculating more? Please answer Yes or No. \n");
+				System.out.print("***********************************************************");
+				String continueCalculating4 = input.next();
+				
+				if (continueCalculating.equalsIgnoreCase("yes")) {
+					
+					//Modulo
+					//*************//
+					if (operation.equalsIgnoreCase("modulo")) {
+						int modulo = valueOne%valueTwo;
+						System.out.print(valueOne+ "%" +valueTwo+ "="+modulo);	
+						int modulo2 = valueTwo%valueOne;
+						System.out.print(valueTwo+ "%" +valueOne+ "="+modulo);
+					}
+				}
+			
+				if (continueCalculating.equalsIgnoreCase("no")) {
+					System.out.print("Thank you for using this calculator:)");
+				}
+				
+				
+}//main
+}//SimpleCalculator
